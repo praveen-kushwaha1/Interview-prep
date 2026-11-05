@@ -1,32 +1,141 @@
-site_name: Java Developer Interview Preparation
 
-site_description: Complete Java Backend Developer Interview Preparation Notes
+site_name: Java Backend Interview Guide
+site_description: Complete Java, Spring Boot, Microservices and System Design Interview Preparation
+site_author: Praveen Kushwaha
+site_url: https://praveen-kushwaha1.github.io/java-backend-interview-guide/
 
-site_author: Java Developer
+repo_name: praveen-kushwaha1/java-backend-interview-guide
+repo_url: https://github.com/YOUR_GITHUB_USERNAME/java-backend-interview-guide
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2026 Java Backend Interview Guide
 
 theme:
   name: material
+  language: en
 
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
+    - navigation.path
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+
+  icon:
+    logo: material/code-braces
+    repo: fontawesome/brands/github
+
+  font:
+    text: Inter
+    code: JetBrains Mono
 
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: indigo
-      accent: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 
-markdown_extensions:
-  - admonition
-  - attr_list
-  - tables
-  - toc:
-      permalink: true
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 plugins:
   - search
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/custom.js
+
+extra:
+  generator: false
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/praveen-kushwaha1
+      name: GitHub Profile
+
+nav:
+  - Home: index.md
+
+  - Java:
+      - Overview: java/index.md
+      - Core Java:
+          - Overview: java/core-java/index.md
+          - Questions: java/core-java/questions.md
+          - Answers:
+              - Exception Handling: java/core-java/answers/exception-handling.md
+              - Collections: java/core-java/answers/collections.md
+              - Multithreading: java/core-java/answers/multithreading.md
+      - Java 8: java/java-8/index.md
+      - Advanced Java: java/java-advanced/index.md
+
+  - Spring Boot:
+      - Overview: spring-boot/index.md
+      - Spring Core: spring-boot/spring-core.md
+      - Spring Data JPA: spring-boot/spring-data-jpa.md
+      - Spring Security: spring-boot/spring-security.md
+
+  - Microservices:
+      - Overview: microservices/index.md
+      - Architecture: microservices/architecture.md
+      - Saga Pattern: microservices/saga-pattern.md
+      - Circuit Breaker: microservices/circuit-breaker.md
+      - Kafka: microservices/kafka.md
+
+  - Database:
+      - Overview: database/index.md
+
+  - System Design:
+      - Overview: system-design/index.md
+
+  - Design Patterns:
+      - Overview: design-patterns/index.md
+
+  - Interview Preparation:
+      - Overview: interview-preparation/index.md

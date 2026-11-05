@@ -1,0 +1,326 @@
+
+/* =========================================
+   JAVA BACKEND INTERVIEW GUIDE
+   Premium UI Design
+   ========================================= */
+
+/* ---------- Global Variables ---------- */
+
+:root {
+    --brand-primary: #6366f1;
+    --brand-secondary: #8b5cf6;
+    --brand-cyan: #06b6d4;
+    --brand-green: #10b981;
+    --brand-orange: #f59e0b;
+
+    --surface-soft: #f8faff;
+    --border-soft: #e5e7eb;
+
+    --gradient-primary: linear-gradient(
+        135deg,
+        #4f46e5 0%,
+        #7c3aed 55%,
+        #0891b2 100%
+    );
+}
+
+/* ---------- Typography ---------- */
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+.md-typeset {
+    font-size: 0.82rem;
+    line-height: 1.85;
+}
+
+.md-typeset h1 {
+    font-weight: 800;
+    letter-spacing: -1.2px;
+}
+
+.md-typeset h2 {
+    font-weight: 750;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid var(--border-soft);
+    padding-bottom: 10px;
+}
+
+.md-typeset h3 {
+    font-weight: 700;
+}
+
+/* ---------- Header ---------- */
+
+.md-header {
+    background: var(--gradient-primary);
+    box-shadow: 0 3px 15px rgba(79, 70, 229, 0.15);
+}
+
+.md-tabs {
+    background: #4338ca;
+}
+
+/* ---------- Sidebar ---------- */
+
+.md-nav__link {
+    border-radius: 7px;
+    transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+    color: var(--brand-primary);
+    background: rgba(99, 102, 241, 0.07);
+}
+
+.md-nav__link--active {
+    color: var(--brand-primary) !important;
+    font-weight: 700;
+}
+
+/* ---------- Homepage Hero ---------- */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 65px 35px;
+    margin: 0 0 35px;
+    border-radius: 22px;
+    background: var(--gradient-primary);
+    color: white !important;
+    box-shadow: 0 15px 40px rgba(79, 70, 229, 0.2);
+}
+
+.hero-section h1 {
+    color: white !important;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 850;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero-section p {
+    color: #e0e7ff !important;
+    font-size: 1.05rem;
+    max-width: 720px;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 6px 13px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    color: white;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.hero-actions a {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 9px;
+    font-weight: 700;
+    text-decoration: none !important;
+    color: #4338ca !important;
+    background: white;
+    transition: 0.2s ease;
+}
+
+.hero-actions a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.hero-actions a.secondary {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* ---------- Stats ---------- */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin: 28px 0 40px;
+}
+
+.stat-card {
+    padding: 22px 14px;
+    text-align: center;
+    border-radius: 14px;
+    border: 1px solid var(--border-soft);
+    background: var(--surface-soft);
+    transition: 0.25s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--brand-primary);
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 850;
+    color: var(--brand-primary);
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    opacity: 0.75;
+}
+
+/* ---------- Category Cards ---------- */
+
+.md-typeset .grid.cards > ul > li {
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border-soft);
+    background: var(--md-default-bg-color);
+    transition: all 0.25s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+    transform: translateY(-5px);
+    border-color: var(--brand-primary);
+    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.13);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+    border-color: var(--border-soft);
+}
+
+/* ---------- Buttons ---------- */
+
+.md-typeset .md-button {
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.md-typeset .md-button--primary {
+    background: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.md-typeset .md-button:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------- Code Blocks ---------- */
+
+.md-typeset pre {
+    border-radius: 12px;
+    border: 1px solid var(--border-soft);
+}
+
+.md-typeset .highlight {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.md-typeset code {
+    border-radius: 5px;
+}
+
+/* ---------- Admonitions ---------- */
+
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+/* ---------- Tables ---------- */
+
+.md-typeset table:not([class]) {
+    border-radius: 10px;
+    overflow: hidden;
+    display: table;
+    width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+    background: rgba(99, 102, 241, 0.1);
+    font-weight: 750;
+}
+
+/* ---------- Search ---------- */
+
+.md-search__form {
+    border-radius: 10px;
+}
+
+.md-search-result__article {
+    border-radius: 9px;
+}
+
+/* ---------- Footer ---------- */
+
+.md-footer {
+    background: #111827;
+}
+
+.md-footer-meta {
+    background: #0f172a;
+}
+
+/* ---------- Dark Mode ---------- */
+
+[data-md-color-scheme="slate"] {
+    --surface-soft: #1e293b;
+    --border-soft: #334155;
+}
+
+[data-md-color-scheme="slate"] .stat-card {
+    background: #1e293b;
+}
+
+[data-md-color-scheme="slate"] .hero-section {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Responsive Design ---------- */
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 40px 22px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-actions a {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 15px 8px;
+    }
+}
