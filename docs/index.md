@@ -1,4 +1,3 @@
-
 <div class="hero-section" markdown>
 
 <span class="hero-tag">🚀 YOUR COMPLETE BACKEND LEARNING PLATFORM</span>
@@ -43,117 +42,109 @@ Build your backend engineering skills with these structured learning paths.
 
 <div class="grid cards" markdown>
 
--   :material-language-java: **01. Core Java**
+- :material-language-java: **01. Core Java**
 
-    ---
+  ***
 
-    Master the foundation of Java programming.
+  Master the foundation of Java programming.
+  - OOP Concepts
+  - Collections Framework
+  - Exception Handling
+  - Multithreading
+  - JVM Internals
 
-    - OOP Concepts
-    - Collections Framework
-    - Exception Handling
-    - Multithreading
-    - JVM Internals
+  [Explore Java →](01-Java/index.md)
 
-    [Explore Java →](java/index.md)
+- :material-leaf: **02. Spring Boot**
 
--   :material-leaf: **02. Spring Boot**
+  ***
 
-    ---
+  Build enterprise-ready backend applications.
+  - Spring Core and IoC
+  - Spring MVC
+  - Spring Data JPA
+  - Spring Security
+  - REST API Development
 
-    Build enterprise-ready backend applications.
+  [Explore Spring Boot →](spring-boot/index.md)
 
-    - Spring Core and IoC
-    - Spring MVC
-    - Spring Data JPA
-    - Spring Security
-    - REST API Development
+- :material-cloud: **03. Microservices**
 
-    [Explore Spring Boot →](spring-boot/index.md)
+  ***
 
--   :material-cloud: **03. Microservices**
+  Learn distributed application architecture.
+  - API Gateway
+  - Service Discovery
+  - Kafka
+  - Saga Pattern
+  - Resilience4j
 
-    ---
+  [Explore Microservices →](microservices/index.md)
 
-    Learn distributed application architecture.
+- :material-database: **04. Database**
 
-    - API Gateway
-    - Service Discovery
-    - Kafka
-    - Saga Pattern
-    - Resilience4j
+  ***
 
-    [Explore Microservices →](microservices/index.md)
+  Understand relational databases and optimization.
+  - SQL Queries
+  - Joins
+  - Indexing
+  - Transactions
+  - Query Optimization
 
--   :material-database: **04. Database**
+  [Explore Database →](database/index.md)
 
-    ---
+- :material-server: **05. System Design**
 
-    Understand relational databases and optimization.
+  ***
 
-    - SQL Queries
-    - Joins
-    - Indexing
-    - Transactions
-    - Query Optimization
+  Learn to design scalable backend systems.
+  - HLD and LLD
+  - Scalability
+  - Load Balancing
+  - Caching
+  - Distributed Systems
 
-    [Explore Database →](database/index.md)
+  [Explore System Design →](system-design/index.md)
 
--   :material-server: **05. System Design**
+- :material-puzzle: **06. Design Patterns**
 
-    ---
+  ***
 
-    Learn to design scalable backend systems.
+  Understand reusable software design solutions.
+  - Singleton
+  - Factory
+  - Strategy
+  - Observer
+  - Builder
 
-    - HLD and LLD
-    - Scalability
-    - Load Balancing
-    - Caching
-    - Distributed Systems
+  [Explore Design Patterns →](design-patterns/index.md)
 
-    [Explore System Design →](system-design/index.md)
+- :material-code-json: **07. Advanced Java**
 
--   :material-puzzle: **06. Design Patterns**
+  ***
 
-    ---
+  Explore advanced Java engineering concepts.
+  - JVM Internals
+  - Concurrency
+  - CompletableFuture
+  - Garbage Collection
+  - Java Memory Model
 
-    Understand reusable software design solutions.
+  [Explore Advanced Java →](java/java-advanced/index.md)
 
-    - Singleton
-    - Factory
-    - Strategy
-    - Observer
-    - Builder
+- :material-clipboard-check: **08. Interview Preparation**
 
-    [Explore Design Patterns →](design-patterns/index.md)
+  ***
 
--   :material-code-json: **07. Advanced Java**
+  Prepare for real backend developer interviews.
+  - Java Interview Questions
+  - Spring Boot Questions
+  - Coding Problems
+  - Scenario-Based Questions
+  - System Design Interviews
 
-    ---
-
-    Explore advanced Java engineering concepts.
-
-    - JVM Internals
-    - Concurrency
-    - CompletableFuture
-    - Garbage Collection
-    - Java Memory Model
-
-    [Explore Advanced Java →](java/java-advanced/index.md)
-
--   :material-clipboard-check: **08. Interview Preparation**
-
-    ---
-
-    Prepare for real backend developer interviews.
-
-    - Java Interview Questions
-    - Spring Boot Questions
-    - Coding Problems
-    - Scenario-Based Questions
-    - System Design Interviews
-
-    [Start Preparation →](interview-preparation/index.md)
+  [Start Preparation →](interview-preparation/index.md)
 
 </div>
 
@@ -163,25 +154,25 @@ Build your backend engineering skills with these structured learning paths.
 
 <div class="grid cards" markdown>
 
--   **Phase 1 — Foundation**
+- **Phase 1 — Foundation**
 
-    :material-check-circle:{ .lg .middle } Core Java, OOP, Collections and Exception Handling.
+  :material-check-circle:{ .lg .middle } Core Java, OOP, Collections and Exception Handling.
 
--   **Phase 2 — Backend Development**
+- **Phase 2 — Backend Development**
 
-    :material-leaf:{ .lg .middle } Spring Boot, REST APIs, JPA and Security.
+  :material-leaf:{ .lg .middle } Spring Boot, REST APIs, JPA and Security.
 
--   **Phase 3 — Distributed Systems**
+- **Phase 3 — Distributed Systems**
 
-    :material-cloud:{ .lg .middle } Microservices, Kafka, Saga and Resilience4j.
+  :material-cloud:{ .lg .middle } Microservices, Kafka, Saga and Resilience4j.
 
--   **Phase 4 — Engineering Excellence**
+- **Phase 4 — Engineering Excellence**
 
-    :material-chart-line:{ .lg .middle } System Design, Performance, Testing and Observability.
+  :material-chart-line:{ .lg .middle } System Design, Performance, Testing and Observability.
 
--   **Phase 5 — Interview Preparation**
+- **Phase 5 — Interview Preparation**
 
-    :material-trophy:{ .lg .middle } Coding, advanced concepts and real-world interview scenarios.
+  :material-trophy:{ .lg .middle } Coding, advanced concepts and real-world interview scenarios.
 
 </div>
 
@@ -196,7 +187,7 @@ Build your backend engineering skills with these structured learning paths.
 5. Practice explaining the concept in interviews.
 
 !!! tip "Learning Tip"
-    Don't just memorize answers. Understand internal implementation, write code and practice explaining the concepts in your own words.
+Don't just memorize answers. Understand internal implementation, write code and practice explaining the concepts in your own words.
 
 ---
 
